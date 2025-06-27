@@ -1,25 +1,23 @@
 body {
   margin: 0;
   height: 100vh;
-  color: white;
   font-family: Arial, sans-serif;
+  color: white;
   background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Tlačítka nahoře vpravo */
+/* Přepínače tapet */
 .bg-switcher {
   position: fixed;
   top: 15px;
   right: 15px;
-  z-index: 10;
 }
 
 .bg-switcher button {
@@ -31,26 +29,24 @@ body {
   margin-left: 8px;
   cursor: pointer;
   font-size: 14px;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .bg-switcher button:hover {
   background-color: rgba(233, 30, 99, 0.7);
 }
 
-/* Obsah uprostřed */
+/* Obsah */
 .content {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   backdrop-filter: blur(6px);
-  padding: 30px 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
   border-radius: 20px;
-  background-color: rgba(0,0,0,0.3);
 }
 
-button#playBtn, button#stopBtn {
+button#playBtn,
+button#stopBtn {
   padding: 15px 30px;
   font-size: 18px;
   background-color: rgba(233, 30, 99, 0.2);
@@ -58,16 +54,24 @@ button#playBtn, button#stopBtn {
   border-radius: 10px;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin: 10px;
   backdrop-filter: blur(4px);
+  transition: 0.3s;
 }
 
-button#playBtn:hover, button#stopBtn:hover {
+button#playBtn:hover,
+button#stopBtn:hover {
   background-color: rgba(194, 24, 91, 0.5);
-  border-color: #c2185b;
 }
 
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-shadow: 0 0 5px #e91e63;
+}
+
+h2 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  opacity: 0.8;
 }
