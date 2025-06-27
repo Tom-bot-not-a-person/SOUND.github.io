@@ -3,7 +3,9 @@ const playBtn = document.getElementById('playBtn');
 const stopBtn = document.getElementById('stopBtn');
 
 playBtn.addEventListener('click', () => {
-  audio.play().catch(e => console.log('Chyba při přehrávání:', e));
+  audio.play().catch(err => {
+    alert("Chyba při přehrávání: " + err.message);
+  });
 });
 
 stopBtn.addEventListener('click', () => {
@@ -11,6 +13,7 @@ stopBtn.addEventListener('click', () => {
   audio.currentTime = 0;
 });
 
+// Přepínání tapet
 const beachBtn = document.getElementById('beachBtn');
 const originalBtn = document.getElementById('originalBtn');
 
