@@ -1,4 +1,4 @@
-// Hlavní hudba
+// Hlavní přehrávač
 const audio = document.getElementById('audioPlayer');
 document.getElementById('playBtn').addEventListener('click', () => audio.play());
 document.getElementById('stopBtn').addEventListener('click', () => {
@@ -14,22 +14,22 @@ document.getElementById('originalBtn').addEventListener('click', () => {
   document.body.style.backgroundImage = "url('background.jpg')";
 });
 
-// Hesla a tajné sekce
+// Zadání hesla
 document.getElementById('passwordBtn').addEventListener('click', () => {
-  const value = document.getElementById('passwordInput').value.trim();
+  const password = document.getElementById('passwordInput').value.trim();
 
-  if (value === "Tom2012.") {
+  if (password === "Tom2012.") {
     document.getElementById('secret1').style.display = 'block';
-  } else if (value === "Tomino") {
+  } else if (password === "Tomino") {
     document.getElementById('secret2').style.display = 'block';
-  } else if (value === "Alan") {
+  } else if (password === "Alan") {
     document.getElementById('secret3').style.display = 'block';
   } else {
     alert("❌ Špatné heslo");
   }
 });
 
-// Tajný 1
+// Tajná hudba 1
 const secret1 = document.getElementById('secretPlayer1');
 document.getElementById('playSecret1').addEventListener('click', () => secret1.play());
 document.getElementById('stopSecret1').addEventListener('click', () => {
@@ -37,7 +37,7 @@ document.getElementById('stopSecret1').addEventListener('click', () => {
   secret1.currentTime = 0;
 });
 
-// Tajný 2
+// Tajná hudba 2
 const secret2 = document.getElementById('secretPlayer2');
 document.getElementById('playSecret2').addEventListener('click', () => secret2.play());
 document.getElementById('stopSecret2').addEventListener('click', () => {
@@ -45,7 +45,7 @@ document.getElementById('stopSecret2').addEventListener('click', () => {
   secret2.currentTime = 0;
 });
 
-// Tajný 3
+// Tajná hudba 3
 const secret3 = document.getElementById('secretPlayer3');
 document.getElementById('playSecret3').addEventListener('click', () => secret3.play());
 document.getElementById('stopSecret3').addEventListener('click', () => {
