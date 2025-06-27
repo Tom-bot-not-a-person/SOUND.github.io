@@ -2,16 +2,68 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
-  <title>Přehrávač se zvukem a background</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>🎵 Choose Your Fighter 🎵</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: rgba(233, 30, 99, 0.2);
+      color: white;
+      border: 2px solid #e91e63;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      backdrop-filter: blur(4px);
+    }
+    button:hover {
+      background-color: rgba(194, 24, 91, 0.5);
+      border-color: #c2185b;
+    }
+    h1 {
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #e91e63;
+    }
+  </style>
 </head>
 <body>
+
   <h1>🎵 Choose Your Fighter 🎵</h1>
+
   <button id="playBtn">▶️ Přehrát</button>
   <button id="stopBtn">⏹️ Zastavit</button>
 
   <audio id="audioPlayer" src="choose_your_fighter.mp3"></audio>
 
-  <script src="script.js"></script>
+  <script>
+    const audio = document.getElementById('audioPlayer');
+    const playBtn = document.getElementById('playBtn');
+    const stopBtn = document.getElementById('stopBtn');
+
+    playBtn.addEventListener('click', () => {
+      audio.play();
+    });
+
+    stopBtn.addEventListener('click', () => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  </script>
+  
 </body>
 </html>
