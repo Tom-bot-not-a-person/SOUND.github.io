@@ -1,12 +1,10 @@
-const audio = document.getElementById('audioPlayer');
-const playBtn = document.getElementById('playBtn');
-const stopBtn = document.getElementById('stopBtn');
+const bg1Btn = document.getElementById('bg1Btn');
+const bg2Btn = document.getElementById('bg2Btn');
 
-playBtn.addEventListener('click', () => {
-  audio.play();
+bg1Btn.addEventListener('click', () => {
+  document.body.style.backgroundImage = "url('background.jpg')";  // první tapeta
 });
 
-stopBtn.addEventListener('click', () => {
-  audio.pause();
-  audio.currentTime = 0;
+bg2Btn.addEventListener('click', () => {
+  document.body.style.backgroundImage = "url('background2.jpg')"; // druhá tapeta
 });
