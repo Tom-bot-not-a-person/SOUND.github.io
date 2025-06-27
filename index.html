@@ -7,13 +7,13 @@
 </head>
 <body>
 
-  <!-- Tapety vpravo nahoře -->
+  <!-- Tapety -->
   <div class="bg-switcher">
     <button id="originalBtn">ORIGINAL</button>
     <button id="beachBtn">BEACH</button>
   </div>
 
-  <!-- Heslo vlevo nahoře -->
+  <!-- Heslo vlevo -->
   <div class="password-box">
     <input type="password" id="passwordInput" placeholder="Zadej heslo..." />
     <button id="passwordBtn">OK</button>
@@ -42,6 +42,14 @@
     <button id="playSecret2">▶️ Secret 2</button>
     <button id="stopSecret2">⏹️ Zastavit</button>
     <audio id="secretPlayer2" src="secret_song2.mp3"></audio>
+  </div>
+
+  <!-- Tajná sekce 3 -->
+  <div class="secret" id="secret3" style="display: none;">
+    <h2>🔒 Tajná hudba 3 odemčena!</h2>
+    <button id="playSecret3">▶️ Secret 3</button>
+    <button id="stopSecret3">⏹️ Zastavit</button>
+    <audio id="secretPlayer3" src="secret_song3.mp3"></audio>
   </div>
 
   <script src="script.js"></script>
