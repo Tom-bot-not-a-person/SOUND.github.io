@@ -3,7 +3,7 @@ body {
   height: 100vh;
   color: white;
   font-family: Arial, sans-serif;
-  background-image: url('background.jpg'); /* defaultní pozadí */
+  background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
