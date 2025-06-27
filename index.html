@@ -7,21 +7,33 @@
 </head>
 <body>
 
-  <!-- Přepínač pozadí -->
+  <!-- Přepínače pozadí vpravo -->
   <div class="bg-switcher">
     <button id="beachBtn">BEACH</button>
     <button id="originalBtn">ORIGINAL</button>
+  </div>
+
+  <!-- Heslo vlevo -->
+  <div class="password-box">
+    <input type="password" id="passwordInput" placeholder="Zadej heslo..." />
+    <button id="passwordBtn">OK</button>
   </div>
 
   <!-- Obsah -->
   <div class="content">
     <h1>🎵 Choose Your Fighter 🎵</h1>
     <h2 id="songTitle">Now Playing: Choose Your Fighter - NewEra</h2>
-    
     <button id="playBtn">▶️ Přehrát</button>
     <button id="stopBtn">⏹️ Zastavit</button>
-    
     <audio id="audioPlayer" src="choose_your_fighter.mp3"></audio>
+  </div>
+
+  <!-- Tajná část (skrytá) -->
+  <div class="secret" id="secretSection" style="display: none;">
+    <h2>🔒 Tajná hudba odemčena!</h2>
+    <button id="playSecret">▶️ Tajná hudba</button>
+    <button id="stopSecret">⏹️ Zastavit</button>
+    <audio id="secretPlayer" src="secret_song.mp3"></audio>
   </div>
 
   <script src="script.js"></script>
