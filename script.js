@@ -6,7 +6,7 @@ document.getElementById('stopBtn').addEventListener('click', () => {
   audio.currentTime = 0;
 });
 
-// Tapety
+// Přepínání tapet
 document.getElementById('beachBtn').addEventListener('click', () => {
   document.body.style.backgroundImage = "url('background2.jpg')";
 });
