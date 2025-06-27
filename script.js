@@ -18,7 +18,7 @@ document.getElementById('originalBtn').addEventListener('click', () => {
 document.getElementById('passwordBtn').addEventListener('click', () => {
   const password = document.getElementById('passwordInput').value.trim();
 
-  if (password === "Tom2012.") {
+  if (password === "Tom") {
     document.getElementById('secret1').style.display = 'block';
   } else if (password === "Tomino") {
     document.getElementById('secret2').style.display = 'block';
