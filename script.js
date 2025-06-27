@@ -1,12 +1,12 @@
-const playBtn = document.getElementById("playBtn");
-const stopBtn = document.getElementById("stopBtn");
-const audio = document.getElementById("audio");
+const audio = document.getElementById('audioPlayer');
+const playBtn = document.getElementById('playBtn');
+const stopBtn = document.getElementById('stopBtn');
 
-playBtn.addEventListener("click", () => {
+playBtn.addEventListener('click', () => {
   audio.play();
 });
 
-stopBtn.addEventListener("click", () => {
+stopBtn.addEventListener('click', () => {
   audio.pause();
-  audio.currentTime = 0; // vrátí se na začátek
+  audio.currentTime = 0;
 });
