@@ -2,17 +2,26 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
-  <title>🎵 Přehrávač jedné písničky 🎵</title>
+  <title>🎵 Přehrávač s přepínačem tapet 🎵</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>🎵 Choose Your Fighter 🎵</h1>
+  <!-- Tlačítka pro přepínání tapet -->
+  <div class="bg-switcher">
+    <button id="beachBtn">BEACH</button>
+    <button id="originalBtn">ORIGINAL</button>
+  </div>
 
-  <button id="playBtn">▶️ Přehrát</button>
-  <button id="stopBtn">⏹️ Zastavit</button>
+  <!-- Hlavní obsah -->
+  <div class="content">
+    <h1>🎵 Choose Your Fighter 🎵</h1>
 
-  <audio id="audioPlayer" src="choose_your_fighter.mp3"></audio>
+    <button id="playBtn">▶️ Přehrát</button>
+    <button id="stopBtn">⏹️ Zastavit</button>
+
+    <audio id="audioPlayer" src="choose_your_fighter.mp3"></audio>
+  </div>
 
   <script src="script.js"></script>
 </body>
