@@ -7,19 +7,19 @@
 </head>
 <body>
 
-  <!-- Přepínače pozadí vpravo -->
+  <!-- Tapety vpravo nahoře -->
   <div class="bg-switcher">
-    <button id="beachBtn">BEACH</button>
     <button id="originalBtn">ORIGINAL</button>
+    <button id="beachBtn">BEACH</button>
   </div>
 
-  <!-- Heslo vlevo -->
+  <!-- Heslo vlevo nahoře -->
   <div class="password-box">
     <input type="password" id="passwordInput" placeholder="Zadej heslo..." />
     <button id="passwordBtn">OK</button>
   </div>
 
-  <!-- Obsah -->
+  <!-- Hlavní přehrávač -->
   <div class="content">
     <h1>🎵 Choose Your Fighter 🎵</h1>
     <h2 id="songTitle">Now Playing: Choose Your Fighter - NewEra</h2>
@@ -28,12 +28,20 @@
     <audio id="audioPlayer" src="choose_your_fighter.mp3"></audio>
   </div>
 
-  <!-- Tajná část (skrytá) -->
-  <div class="secret" id="secretSection" style="display: none;">
-    <h2>🔒 Tajná hudba odemčena!</h2>
-    <button id="playSecret">▶️ Tajná hudba</button>
-    <button id="stopSecret">⏹️ Zastavit</button>
-    <audio id="secretPlayer" src="secret_song.mp3"></audio>
+  <!-- Tajná sekce 1 -->
+  <div class="secret" id="secret1" style="display: none;">
+    <h2>🔒 Tajná hudba 1 odemčena!</h2>
+    <button id="playSecret1">▶️ Secret 1</button>
+    <button id="stopSecret1">⏹️ Zastavit</button>
+    <audio id="secretPlayer1" src="secret_song.mp3"></audio>
+  </div>
+
+  <!-- Tajná sekce 2 -->
+  <div class="secret" id="secret2" style="display: none;">
+    <h2>🔒 Tajná hudba 2 odemčena!</h2>
+    <button id="playSecret2">▶️ Secret 2</button>
+    <button id="stopSecret2">⏹️ Zastavit</button>
+    <audio id="secretPlayer2" src="secret_song2.mp3"></audio>
   </div>
 
   <script src="script.js"></script>
