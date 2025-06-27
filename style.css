@@ -1,22 +1,14 @@
 body {
-  background-image: url('background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background-color: #111;
   color: white;
   font-family: Arial, sans-serif;
   height: 100vh;
   margin: 0;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-
-  /* fallback barva, kdyby se obrázek nenačetl */
-  background-color: #111;
 }
 
 button {
