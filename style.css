@@ -3,7 +3,7 @@ body {
   height: 100vh;
   font-family: Arial, sans-serif;
   color: white;
-  background-image: url('background.jpg');
+  background-image: url('background2.jpg'); /* BEACH = výchozí */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,13 +13,12 @@ body {
   justify-content: center;
 }
 
-/* Tlačítka vpravo nahoře */
+/* Tapety vpravo nahoře */
 .bg-switcher {
   position: fixed;
   top: 15px;
   right: 15px;
 }
-
 .bg-switcher button {
   background-color: rgba(0,0,0,0.5);
   color: white;
@@ -31,7 +30,6 @@ body {
   font-size: 14px;
   transition: 0.3s;
 }
-
 .bg-switcher button:hover {
   background-color: rgba(233, 30, 99, 0.7);
 }
@@ -42,7 +40,6 @@ body {
   top: 15px;
   left: 15px;
 }
-
 .password-box input {
   padding: 6px;
   border-radius: 5px;
@@ -51,7 +48,6 @@ body {
   color: white;
   backdrop-filter: blur(4px);
 }
-
 .password-box button {
   margin-left: 6px;
   padding: 6px 10px;
@@ -62,7 +58,7 @@ body {
   cursor: pointer;
 }
 
-/* Hlavní přehrávač */
+/* Hlavní obsah */
 .content {
   text-align: center;
   backdrop-filter: blur(6px);
@@ -71,10 +67,9 @@ body {
   border-radius: 20px;
 }
 
-button#playBtn,
-button#stopBtn,
-#playSecret,
-#stopSecret {
+button,
+#playSecret1, #stopSecret1,
+#playSecret2, #stopSecret2 {
   padding: 15px 30px;
   font-size: 18px;
   background-color: rgba(233, 30, 99, 0.2);
@@ -86,12 +81,11 @@ button#stopBtn,
   backdrop-filter: blur(4px);
   transition: 0.3s;
 }
-
 button:hover {
   background-color: rgba(194, 24, 91, 0.5);
 }
 
-/* Tajná sekce */
+/* Tajné sekce */
 .secret {
   margin-top: 30px;
   text-align: center;
