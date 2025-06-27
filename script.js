@@ -20,10 +20,8 @@ document.getElementById('passwordBtn').addEventListener('click', () => {
 
   if (password === "Tom") {
     document.getElementById('secret1').style.display = 'block';
-  } else if (password === "Tomino") {
-    document.getElementById('secret2').style.display = 'block';
   } else if (password === "Alan") {
-    document.getElementById('secret3').style.display = 'block';
+    document.getElementById('secret2').style.display = 'block';
   } else {
     alert("❌ Špatné heslo");
   }
@@ -37,18 +35,10 @@ document.getElementById('stopSecret1').addEventListener('click', () => {
   secret1.currentTime = 0;
 });
 
-// Tajná hudba 2
+// Tajná hudba 2 (Alan Walker – Darkside)
 const secret2 = document.getElementById('secretPlayer2');
 document.getElementById('playSecret2').addEventListener('click', () => secret2.play());
 document.getElementById('stopSecret2').addEventListener('click', () => {
   secret2.pause();
   secret2.currentTime = 0;
-});
-
-// Tajná hudba 3
-const secret3 = document.getElementById('secretPlayer3');
-document.getElementById('playSecret3').addEventListener('click', () => secret3.play());
-document.getElementById('stopSecret3').addEventListener('click', () => {
-  secret3.pause();
-  secret3.currentTime = 0;
 });
