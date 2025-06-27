@@ -13,7 +13,7 @@ body {
   justify-content: center;
 }
 
-/* Přepínače tapet */
+/* Tlačítka vpravo nahoře */
 .bg-switcher {
   position: fixed;
   top: 15px;
@@ -36,7 +36,33 @@ body {
   background-color: rgba(233, 30, 99, 0.7);
 }
 
-/* Obsah */
+/* Heslo vlevo nahoře */
+.password-box {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+.password-box input {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #e91e63;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(4px);
+}
+
+.password-box button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #e91e63;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+/* Hlavní přehrávač */
 .content {
   text-align: center;
   backdrop-filter: blur(6px);
@@ -46,7 +72,9 @@ body {
 }
 
 button#playBtn,
-button#stopBtn {
+button#stopBtn,
+#playSecret,
+#stopSecret {
   padding: 15px 30px;
   font-size: 18px;
   background-color: rgba(233, 30, 99, 0.2);
@@ -59,19 +87,16 @@ button#stopBtn {
   transition: 0.3s;
 }
 
-button#playBtn:hover,
-button#stopBtn:hover {
+button:hover {
   background-color: rgba(194, 24, 91, 0.5);
 }
 
-h1 {
-  margin-bottom: 5px;
-  text-shadow: 0 0 5px #e91e63;
-}
-
-h2 {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  opacity: 0.8;
+/* Tajná sekce */
+.secret {
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
 }
