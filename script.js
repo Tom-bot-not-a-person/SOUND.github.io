@@ -1,10 +1,10 @@
-const bg1Btn = document.getElementById('bg1Btn');
-const bg2Btn = document.getElementById('bg2Btn');
+const beachBtn = document.getElementById('beachBtn');
+const originalBtn = document.getElementById('originalBtn');
 
-bg1Btn.addEventListener('click', () => {
-  document.body.style.backgroundImage = "url('background.jpg')";  // první tapeta
+beachBtn.addEventListener('click', () => {
+  document.body.style.backgroundImage = "url('background2.jpg')";
 });
 
-bg2Btn.addEventListener('click', () => {
-  document.body.style.backgroundImage = "url('background2.jpg')"; // druhá tapeta
+originalBtn.addEventListener('click', () => {
+  document.body.style.backgroundImage = "url('background.jpg')";
 });
