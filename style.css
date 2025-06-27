@@ -1,9 +1,15 @@
 body {
-  background-color: #111;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: white;
   text-align: center;
   font-family: Arial, sans-serif;
   padding-top: 100px;
+  height: 100vh;
+  margin: 0;
 }
 
 button {
@@ -15,6 +21,7 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
