@@ -1,6 +1,19 @@
-// Hlavní přehrávač
+function stopAllAudio(except = null) {
+  const players = document.querySelectorAll('audio');
+  players.forEach(player => {
+    if (player !== except) {
+      player.pause();
+      player.currentTime = 0;
+    }
+  });
+}
+
+// Hlavní hudba
 const audio = document.getElementById('audioPlayer');
-document.getElementById('playBtn').addEventListener('click', () => audio.play());
+document.getElementById('playBtn').addEventListener('click', () => {
+  stopAllAudio(audio);
+  audio.play();
+});
 document.getElementById('stopBtn').addEventListener('click', () => {
   audio.pause();
   audio.currentTime = 0;
@@ -14,7 +27,7 @@ document.getElementById('originalBtn').addEventListener('click', () => {
   document.body.style.backgroundImage = "url('background.jpg')";
 });
 
-// Zadání hesla
+// Hesla
 document.getElementById('passwordBtn').addEventListener('click', () => {
   const password = document.getElementById('passwordInput').value.trim();
 
@@ -29,7 +42,10 @@ document.getElementById('passwordBtn').addEventListener('click', () => {
 
 // Tajná hudba 1
 const secret1 = document.getElementById('secretPlayer1');
-document.getElementById('playSecret1').addEventListener('click', () => secret1.play());
+document.getElementById('playSecret1').addEventListener('click', () => {
+  stopAllAudio(secret1);
+  secret1.play();
+});
 document.getElementById('stopSecret1').addEventListener('click', () => {
   secret1.pause();
   secret1.currentTime = 0;
@@ -37,7 +53,10 @@ document.getElementById('stopSecret1').addEventListener('click', () => {
 
 // Tajná hudba 2 (Alan Walker – Darkside)
 const secret2 = document.getElementById('secretPlayer2');
-document.getElementById('playSecret2').addEventListener('click', () => secret2.play());
+document.getElementById('playSecret2').addEventListener('click', () => {
+  stopAllAudio(secret2);
+  secret2.play();
+});
 document.getElementById('stopSecret2').addEventListener('click', () => {
   secret2.pause();
   secret2.currentTime = 0;
