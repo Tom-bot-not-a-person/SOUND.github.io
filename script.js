@@ -27,7 +27,7 @@ document.getElementById('originalBtn').addEventListener('click', () => {
   document.body.style.backgroundImage = "url('background.jpg')";
 });
 
-// Hesla
+// Zadání hesla
 document.getElementById('passwordBtn').addEventListener('click', () => {
   const password = document.getElementById('passwordInput').value.trim();
 
@@ -35,6 +35,8 @@ document.getElementById('passwordBtn').addEventListener('click', () => {
     document.getElementById('secret1').style.display = 'block';
   } else if (password === "Alan") {
     document.getElementById('secret2').style.display = 'block';
+  } else if (password === "Famy") {
+    document.getElementById('secret3').style.display = 'block';
   } else {
     alert("❌ Špatné heslo");
   }
@@ -60,4 +62,15 @@ document.getElementById('playSecret2').addEventListener('click', () => {
 document.getElementById('stopSecret2').addEventListener('click', () => {
   secret2.pause();
   secret2.currentTime = 0;
+});
+
+// Tajná hudba 3 (Famy – Ava)
+const secret3 = document.getElementById('secretPlayer3');
+document.getElementById('playSecret3').addEventListener('click', () => {
+  stopAllAudio(secret3);
+  secret3.play();
+});
+document.getElementById('stopSecret3').addEventListener('click', () => {
+  secret3.pause();
+  secret3.currentTime = 0;
 });
