@@ -5,7 +5,7 @@
   <title>🎵 Přehrávač 🎵</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body style="background-image: url('background2.jpg'); background-size: cover;">
 
   <!-- Přepínání tapet -->
   <div class="bg-switcher" style="position: fixed; top: 10px; right: 10px;">
@@ -25,7 +25,7 @@
     <h2 id="songTitle">Now Playing: Choose Your Fighter - NewEra</h2>
     <button id="playBtn">▶️ Přehrát</button>
     <button id="stopBtn">⏹️ Zastavit</button>
-    <audio id="audioPlayer" src="choose_your_fighter.mp3"></audio>
+    <audio id="audioPlayer" src="choose_your_fighter.mp3" loop></audio>
   </div>
 
   <!-- Tajná hudba 1 -->
@@ -33,7 +33,7 @@
     <h2>🔒 Tajná hudba 1 odemčena!</h2>
     <button id="playSecret1">▶️ Přehrát Secret 1</button>
     <button id="stopSecret1">⏹️ Zastavit</button>
-    <audio id="secretPlayer1" src="secret_song.mp3"></audio>
+    <audio id="secretPlayer1" src="secret_song.mp3" loop></audio>
   </div>
 
   <!-- Tajná hudba 2 (Alan Walker – Darkside) -->
@@ -41,7 +41,7 @@
     <h2>🔒 Alan Walker – Darkside (feat. AuRa and Tomine Harket)</h2>
     <button id="playSecret2">▶️ Přehrát Darkside</button>
     <button id="stopSecret2">⏹️ Zastavit</button>
-    <audio id="secretPlayer2" src="Alan%20Walker%20-%20Darkside%20(feat.%20AuRa%20and%20Tomine%20Harket).mp3"></audio>
+    <audio id="secretPlayer2" src="Alan%20Walker%20-%20Darkside%20(feat.%20AuRa%20and%20Tomine%20Harket).mp3" loop></audio>
   </div>
 
   <script src="script.js"></script>
